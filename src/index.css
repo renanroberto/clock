@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: black;
+  color: white;
+}
+
+.center {
+  display: flex;
+
+  width: 100vw;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  color: red;
+  font-size: 4em;
+  font-family: 'VT323', monospace;
+
+  padding: 10px;
+  border: 1px ridge red;
+  border-radius: 10px;
+  background-color: rgba(255, 0, 0, 0.1);
+
+  animation: pulse 0.5s ease-in 0s infinite alternate-reverse
+}
+
+@keyframes pulse {
+  from { box-shadow: 0 0 1px red }
+  to { box-shadow: 0 0 10px red }
+}
