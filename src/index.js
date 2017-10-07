@@ -2,21 +2,17 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 
-import Clock from './components/clock'
+import Clock from './clock'
 
-class Main extends React.Component {
-  render () {
-    return (
-      <div className="center">
-        <div className="clock">
-          <Clock />
-        </div>
-      </div>
-    )
-  }
+function App () {
+  return (
+    <div className="center">
+      <Clock />
+    </div>
+  )
 }
 
 ReactDOM.render(
-  <Main />,
+  <App />,
   document.getElementById('root')
 )

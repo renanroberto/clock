@@ -28,7 +28,10 @@ body {
   border-radius: 10px;
   background-color: rgba(255, 0, 0, 0.1);
 
-  animation: pulse 0.5s ease-in 0s infinite alternate-reverse
+  animation: pulse 0.5s ease-in 0s infinite alternate-reverse;
+
+  cursor: pointer;
+  user-select: none;
 }
 
 @keyframes pulse {
