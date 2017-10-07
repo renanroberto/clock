@@ -28,6 +28,8 @@ export default class Clock extends React.Component {
   }
 
   convert (time, method) {
+    if (isNaN(time[1])) time = '0'+time
+
     if (method !== 'AMPM') {
       let H = parseInt(time.substring(0,2), 10)
       let ampm = time.substring(9)
